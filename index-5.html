@@ -31,7 +31,7 @@
         <i class="fa fa-spinner fa-spin preloader-animation" aria-hidden="true"></i>
     </div>
     <!-- Preloader End -->
-
+    
     <!-- WRAPPER START -->
     <div id="wrapper">
         <!-- HEADER START -->
@@ -55,11 +55,11 @@
                             <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                                 <ul class="dropdown-menu">
-                                    <li class="active"><a href="index.html">Homepage 1</a></li>
+                                    <li><a href="index.html">Homepage 1</a></li>
                                     <li><a href="index-2.html">Homepage 2</a></li>
                                     <li><a href="index-3.html">Homepage 3</a></li>
                                     <li><a href="index-4.html">Homepage 4</a></li>
-                                    <li><a href="index-5.html">Home 5 (Full Carousel)</a></li>
+                                    <li class="active"><a href="index-5.html">Home 5 (Full Carousel)</a></li>
                                 </ul>
                             </li>
 
@@ -146,43 +146,54 @@
         <!-- HEADER END -->
 
 
-        <!-- HERO SLIDER -->
-        <section class="cd-hero">
-            <ul class="list-unstyled cd-hero-slider autoplay">
 
-                <li class="selected" style="background-image:url('http://placehold.it/1920x680');">
-                    <div class="container">
-                        <h1>Edura Template</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</h2>
-                        <a href="#" class="btn btn-primary btn-lg text-uppercase">Hello World</a>
+
+        <!-- Full Page Image Background Carousel Header -->
+        <div id="home-slider" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#home-slider" data-slide-to="1"></li>
+                <li data-target="#home-slider" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!-- Set the first background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
+                    <div class="carousel-caption">
+                        <h1 class="text-uppercase text-center">Edura Template</h1>
+                        <p class="lead text-uppercase">Fint the best solution</p>
                     </div>
-                </li>
-
-                <li style="background-image:url('http://placehold.it/1920x680');">
-                    <div class="container">
-                        <h1>Responsive Design</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</h2>
-                        <a href="#" class="btn btn-primary btn-lg text-uppercase">Hello World</a>
+                </div>
+                <div class="item">
+                    <!-- Set the second background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
+                    <div class="carousel-caption">
+                        <h1 class="text-uppercase text-center">Responsive Design</h1>
+                        <p class="lead text-uppercase">Looks great on any screen</p>
                     </div>
-                </li>
-
-                <li style="background-image:url('http://placehold.it/1920x680');">
-                    <div class="container">
-                        <h1>We Are Edura</h1>
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In consequatur cumque natus!</h2>
-                        <a href="#" class="btn btn-primary btn-lg text-uppercase">Hello World</a>
+                </div>
+                <div class="item">
+                    <!-- Set the third background image using inline CSS below. -->
+                    <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
+                    <div class="carousel-caption">
+                        <h1 class="text-uppercase text-center">Multiple Layouts</h1>
+                        <p class="lead text-uppercase">Choose the best</p>
                     </div>
-                </li>
-
-            </ul>
-
-
-            <div class="arrow-nav">
-                <div class="prev"><a class="hero-prev" href="#"><i class="fa fa-angle-left"></i></a></div>
-                <div class="next"><a class="hero-next" href="#"><i class="fa fa-angle-right"></i></a></div>
+                </div>
             </div>
 
-        </section>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#home-slider" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#home-slider" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+
+        </div>
 
 
 
