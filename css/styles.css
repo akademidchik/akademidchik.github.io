@@ -100,7 +100,7 @@ body{
     margin: auto;
 }
 .typed{	
-	font-size: 23px;
+	font-size: 28px;
 	letter-spacing: 0.1em;
 	display: inline-block;
 
@@ -121,7 +121,7 @@ body{
 }
 .tex{
 	font-style: italic;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 15px;
@@ -147,7 +147,7 @@ body{
 .bl-bot h3,
 .bl-bot p{
 
-	font-size: 16px;
+	font-size: 21px;
 	color:#ffffff;
 	letter-spacing: 0.08em;
 }
@@ -164,10 +164,10 @@ body{
 }
 .bl-th p,
 .bl-th p span{
-	font-size:1.4vw;
+	font-size:21px;
 	text-align:center;
 	text-indent: 0;
-	    line-height: 1.5em;
+	line-height: 1.5em;
 }
 .bl-th  .bl{
 	border:6px solid #ffffff;
@@ -184,9 +184,7 @@ body{
 .bl-th  .bl span{
 	padding-left:0;
 }
-.bl-th  .bl span{
-	font-size:16px;
-}
+
 .bl-th  .bl span{
 	display:block;
 }
@@ -199,8 +197,6 @@ body{
 .bl-th  .bl.col-3{
 	background:#2d80c2;
 }
-
-
 
 
 
@@ -223,6 +219,9 @@ body{
 	body .bl-bot .pad{
 		padding-left: 10%;
 	}
+	body .bl-th  .bl{
+		height: 12vw;
+	}
 }
 @media (max-width: 1360px){
 	body  .container {
@@ -236,10 +235,7 @@ body{
 	body .bl-bot{
 		padding: 20px 0 3% 0;
 	}
-	body .bl-bot h3, 
-	body .bl-bot p{
-		font-size: 16px;
-	}
+
 	body .main-bl .name{
 		padding-top: 5%;
 		padding-bottom: 2%;
@@ -312,6 +308,19 @@ body{
 }
 
 @media (max-width: 776px){
+	.bl-th  .bl p,
+	.bl-th  .bl span{
+		font-size: 16px;
+	}
+	body .typed{
+		font-size: 23px;
+	}
+	body .tex{
+		font-size: 15px;
+	}
+	body .bl-bot h3, body .bl-bot p {
+		font-size: 16px;
+	}
 	body .bl-th{
 		padding-left: 5%;
 	}
@@ -347,11 +356,12 @@ body{
 
 	body .bl-bot h3, 
 	body .bl-bot p{
-
+		
 		letter-spacing: 0.001em;
 	}
 	body .bl-th  .bl{
 		height:auto;
+		    padding: 15px 0;
 	}
 	body .img-min img {
 		width: 80%;
