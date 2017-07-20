@@ -100,7 +100,7 @@ body{
     margin: auto;
 }
 .typed{	
-	font-size: 2vw;
+	font-size: 23px;
 	letter-spacing: 0.1em;
 	display: inline-block;
 
@@ -121,7 +121,7 @@ body{
 }
 .tex{
 	font-style: italic;
-    font-size: 1.5vw;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.2em;
     padding-left: 15px;
@@ -137,15 +137,21 @@ body{
     padding: 20px 0 10% 0;
     line-height: 2.5em;
 }
-.bl-bot span,
-.bl-bot p{
+.bl-bot h3{
+	font-weight:bold;
+}
+.bl-bot .pad{
 	padding-left: 20%;
 	padding-right: 5%;
-	font-size: 1.4vw;
+}
+.bl-bot h3,
+.bl-bot p{
+
+	font-size: 16px;
 	color:#ffffff;
 	letter-spacing: 0.08em;
 }
-.bl-bot span{
+.bl-bot h3{
 	display:block;
 }
 .bl-bot p{
@@ -166,6 +172,8 @@ body{
 .bl-th  .bl{
 	border:6px solid #ffffff;
 	display:inline-block;
+	vertical-align:top;
+	
 	width: 25%;
 	font-style:italic;
 	margin-right: 4%;
@@ -175,6 +183,12 @@ body{
 .bl-th  .bl p,
 .bl-th  .bl span{
 	padding-left:0;
+}
+.bl-th  .bl span{
+	font-size:16px;
+}
+.bl-th  .bl span{
+	display:block;
 }
 .bl-th  .bl.col-1{
 	background:#d7524d;
@@ -205,8 +219,8 @@ body{
 		left: -10%;
 		width:110%;
 	}
-	body .bl-bot span, 
-	body .bl-bot p {
+
+	body .bl-bot .pad{
 		padding-left: 10%;
 	}
 }
@@ -222,9 +236,9 @@ body{
 	body .bl-bot{
 		padding: 20px 0 3% 0;
 	}
-	body .bl-bot span, 
+	body .bl-bot h3, 
 	body .bl-bot p{
-		font-size: 1.2vw;
+		font-size: 16px;
 	}
 	body .main-bl .name{
 		padding-top: 5%;
@@ -253,12 +267,8 @@ body{
 		width: 23%;
 		text-align: center;
 	}
-	body .typed,
-	body .main-bl .name span{
-		font-size: 29px;
-	}
+	
 	body .tex{
-		font-size:26px;
 		padding-bottom: 35%;
 	}
 	body .bl-th  .bl{
@@ -269,10 +279,7 @@ body{
 		margin: 0 auto;
 		width: 100%;
 	}
-	body .bl-bot span, 
-	body .bl-bot p{
-		font-size:20px;
-	}
+	
 	body .main-bl{
 		position:relative;
 		height:100%;
@@ -288,8 +295,8 @@ body{
 		width:105%;
 		left: -10%;
 	}
-	body .bl-bot span, 
-	body .bl-bot p{
+
+	body .bl-bot .pad{
 		padding-left: 10%;
 	}
 	body .bl-bot{
@@ -305,19 +312,29 @@ body{
 }
 
 @media (max-width: 776px){
+	body .bl-th{
+		padding-left: 5%;
+	}
+	body .col-xs-12:first-of-type{
+		padding-right:0;
+		padding-left:0;
+	}
+	body .col-xs-11{
+		padding-right:0;
+	}
 	body .bl-bot{
-		width: 110%;
+		width: 107%;
 		left:-10%;
 	}
-	body .bl-bot span, 
-	body .bl-bot p{
+
+	body .bl-bot .pad{
 		padding-left: 10%;
 	}
 	body .pos{
-		top: 31%;
+		top: 25%;
 	}
 	body .tex{
-		padding-bottom: 50%;
+		padding-bottom: 32%;
 	}
 	body .logo {
 		padding-left: 0;
@@ -328,9 +345,9 @@ body{
 		padding-top: 0;
 	}
 
-	body .bl-bot span, 
+	body .bl-bot h3, 
 	body .bl-bot p{
-		padding-left: 10%;
+
 		letter-spacing: 0.001em;
 	}
 	body .bl-th  .bl{
@@ -345,25 +362,23 @@ body{
 		width: 21%;
 	}
 	body .tex {
-		padding-bottom: 62%;
+		padding-bottom: 34%;
 	}
 	body .bl-th  .bl{
 		width:50%;
 		margin-bottom:15px;
 	}
 	body .pos {
-		top: 26%;
+		top: 20%;
 	}
 }
 @media (max-width: 400px){
 	body .img-min img {
 		width: 100%;
 	}
-	body .tex {
-		padding-bottom: 90%;
-	}
+
 	body .pos {
-		top: 24%;
+		top: 20%;
 	}
 }
 @media (min-width: 1361px){
